@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap");
+
+.mainWrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 202, 147, 1) 27%
+  );
+}
+.content_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.headerheading {
+  font-family: "Asap", sans-serif;
+  font-size: 65px;
+  color: white;
+}
+.startBtn {
+  outline: none !important;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 7px 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.startBtn:hover {
+  outline: none !important;
+  font-size: 25px;
+  background-color: white;
+  color: black;
+  padding: 7px 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+}

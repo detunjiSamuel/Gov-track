@@ -1,0 +1,229 @@
+.questionCard_Wrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 202, 147, 1) 27%
+  );
+}
+p{
+  margin-bottom: 5px !important;
+}
+.questionContent {
+  color: white;
+  background: rgb(255, 184, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 184, 126, 1) 0%,
+    rgba(253, 148, 142, 1) 100%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:400px;
+}
+.questionStats {
+  display: flex;
+  justify-content: space-between;
+}
+.question1 {
+  font-size: 25px;
+}
+.score {
+  font-weight: bold;
+  font-size: 20px;
+}
+.questionStats p {
+  font-size: 20px;
+}
+.Hello {
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 10px 0px !important;
+}
+.isClicked {
+  text-align: center;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 10px 0px !important;
+}
+.Hello:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.nextBtn {
+  position: absolute;
+  bottom: -3%;
+  left: 0%;
+  background-color: #fd948d;
+  outline: none !important;
+  border: none !important;
+  font-size: 22px;
+  color: white;
+  padding: 5px;
+}
+.nextBtn:hover {
+  background-color: #fd948d;
+  outline: none !important;
+  border: none !important;
+  font-size: 22px;
+}
+.Hello,.isClicked{
+  height: 70px;
+}
+@media (max-width: 768px) {
+  .question1 {
+    font-size: 25px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+  }
+  .isClicked,
+  .Hello {
+    font-size: 16px;
+    height: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .question1 {
+    font-size: 16px;
+    
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+  }
+  .isClicked,
+  .Hello {
+    height: 50px;
+  }
+}
+@media (max-width: 530px) {
+  .question1 {
+    font-size: 18px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+  }
+  .isClicked,
+  .Hello {
+    height: 65px;
+  }
+}
+@media (max-width: 430px) {
+  .question1 {
+    font-size: 16px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 350px;
+  }
+  .isClicked,
+  .Hello {
+    height: 65px;
+  }
+}
+@media (max-width: 380px) {
+  .question1 {
+    font-size: 16px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+  }
+  .Hello,
+  .isClicked {
+    height: 60px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 310px) {
+  .question1 {
+    font-size: 20px;
+  }
+  .questionContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+  }
+  .isClicked,
+  .Hello {
+    height: 80px;
+    font-size: 16px;
+  }
+}

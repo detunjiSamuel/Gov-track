@@ -1,0 +1,132 @@
+.resultCardWrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 202, 147, 1) 27%
+  );
+  position: relative;
+}
+.resultContent {
+  color: white;
+  background: rgb(255, 184, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 184, 126, 1) 0%,
+    rgba(253, 148, 142, 1) 100%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 500px;
+}
+
+.restartBtn{
+  text-align:center;
+  background-color: white;
+  color:black;
+  outline: none;
+  padding: 15px 20px;
+  border:none;
+  font-size: 22px;
+  border-radius: 20px;
+}
+@media (max-width: 576px) {font-size: 35px;
+  .resultContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 500px;
+  }
+  .helloText h1{
+    font-size: 35px;
+  }
+}
+@media (max-width: 530px) {
+ 
+  .resultContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+  }
+  
+}
+@media (max-width: 425px) {
+  
+  .resultContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 320px;
+  }
+}
+@media (max-width: 336px) {
+  
+  .resultContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 260px;
+  }
+ 
+}
+@media (max-width: 320px) {
+  
+  .resultContent {
+    color: white;
+    background: rgb(255, 184, 126);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 184, 126, 1) 0%,
+      rgba(253, 148, 142, 1) 100%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 260px;
+  }
+
+}

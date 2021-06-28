@@ -1,0 +1,24 @@
+{
+  "name": "parseit",
+  "version": "1.0.0",
+  "description": "A web app that enables the user to parse their own text",
+  "main": "server.js",
+  "scripts": {
+    "server-dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "pdfjs-dist": "^2.2.228"
+  },
+  "engines": {
+    "node": "8.11.1"
+  }
+}
