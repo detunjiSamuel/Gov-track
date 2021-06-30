@@ -1,7 +1,7 @@
 FROM python:3.9.5
 
-RUN mkdir /usr/src/app/qgen
-WORKDIR /usr/src/app/qgen
+
+WORKDIR /usr/src/app/
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
