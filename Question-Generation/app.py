@@ -206,7 +206,7 @@ def prepareDf(df):
 
 
 def predictWords(wordsDf, df):
-    
+    print("here is the error")
     predictorPickleName = 'data/pickles/nb-predictor.pkl'
     predictor = loadPickle(predictorPickleName)
     
