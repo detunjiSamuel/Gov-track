@@ -1,4 +1,6 @@
 import React, { createRef, useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import "./App.css";
 import Quiz from "./Components/Quiz/Quiz";
 import { FilteredQuestions } from "./Types/quizQuestionTYpes";
@@ -9,7 +11,16 @@ import firebase from "./firebase";
 import Swal from "sweetalert2";
 import axios from "axios";
 
-function App() {
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
+import Login from './pages/Login';
+
+
+// Test before integration
+
+function Appp() {
   let [iteration, setIterations] = useState(0);
   let [allQuestions, setAllQuestions] = useState<FilteredQuestions[]>([]);
   const totalQuestions: number = 5;
@@ -82,7 +93,24 @@ function App() {
     console.log(questions);
   });
 
-  return <div>{decideShow()}</div>;
+ return <div>{decideShow()}</div>; 
+
+  
+
 }
+
+
+
+
+const App = () => {
+  const { user } = useContext(Context);
+  return (
+    <Login/>
+
+  );
+};
+
+
+
 
 export default App;

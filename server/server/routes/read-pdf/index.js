@@ -10,6 +10,7 @@ const router = express.Router();
 const getQuestions  =  async (ptext) =>{
 	console.log("generating questions")
     try{
+		console.log(ptext)
         const {data } =  await axios.post('http://localhost:5001', {text :ptext});
 		return data
     } catch(e){
@@ -28,7 +29,7 @@ router.post('/read-pdf', upload.any(), (req, res) => {
 			text = await readPDF(buffer);
 			allPDFinput.push(text)
 		}
-		result = await getQuestions(allPDFinput[0])
+		result = await getQuestions(text)
 		console.log(result)
 		res.status(200).json(result);
 	})(req, res)

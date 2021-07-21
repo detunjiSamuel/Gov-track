@@ -139,7 +139,6 @@ function Quiz ( props: {questions: FilteredQuestions[]} ) {
       <div className="mainWrapper">
         <div className="content_main">
           <p className="headerheading">Welcome To Quiz </p>
-          
           <button className="startBtn rounded-pill" onClick={startTheQuiz}> StartQuiz</button>
         </div>
       </div >

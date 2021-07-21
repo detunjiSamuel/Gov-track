@@ -3,7 +3,8 @@ const PDFJS = require("pdfjs-dist");
 const getPageText = async (pdf, pageNo) => {
     const page = await pdf.getPage(pageNo);
     const tokenizedText = await page.getTextContent();
-    const pageText = tokenizedText.items.map(token => token.str).join("\n");
+    const pageText = tokenizedText.items.map(token => token.str).join("  ");
+     // string.replace(/[^a-zA-Z0-9]/g, '')
     return pageText;
 };
 
