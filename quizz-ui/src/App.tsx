@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, { createRef, useEffect, useState , Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import "./App.css";
@@ -12,10 +12,21 @@ import Swal from "sweetalert2";
 import axios from "axios";
 
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useContext } from "react";
-import { Context } from "./context/Context";
-import Login from './pages/Login';
+import Navbar from './Components/layout/Navbar';
+import Home from './Components/pages/Home';
+import About from './Components/pages/About';
+import Register from './Components/auth/Register';
+import Login from './Components/auth/Login';
+import Alerts from './Components/layout/Alerts';
+import PrivateRoute from './Components/routing/PrivateRoute';
+
+import ContactState from './context/contact/ContactState';
+import AuthState from './context/auth/AuthState';
+import AlertState from './context/alert/AlertState';
+import './App.css';
+
+// import { useContext } from "react";
+ // import AuthState from './context/auth/AuthState';
 
 
 // Test before integration
@@ -103,10 +114,28 @@ function Appp() {
 
 
 const App = () => {
-  const { user } = useContext(Context);
-  return (
-    <Login/>
 
+  return (
+    <AuthState>
+    <ContactState>
+      <AlertState>
+        <Router>
+          <Fragment>
+            <Navbar />
+            <div className='container'>
+              <Alerts />
+              <Switch>
+                <PrivateRoute exact path='/' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/register' component={Register} />
+                <Route exact path='/login' component={Login} />
+              </Switch>
+            </div>
+          </Fragment>
+        </Router>
+      </AlertState>
+    </ContactState>
+  </AuthState>
   );
 };
 

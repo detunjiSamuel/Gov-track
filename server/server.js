@@ -1,3 +1,5 @@
+
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -5,6 +7,7 @@ const path = require("path");
 const routes = require("./server/routes");
 const http = require("http");
 const cors = require("cors");
+const {MONGO_URI} =  process.env;
 
 const app = express();
 
@@ -12,11 +15,11 @@ const app = express();
 app.use(cors());
 // bodyparser
 app.use(express.json({ extended: false }));
-
+console.log(MONGO_URI)
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://admin:admin@cluster0.mn72v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+      MONGO_URI,
       {
         useNewUrlParser: true,
         useCreateIndex: true,

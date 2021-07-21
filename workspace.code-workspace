@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "Question-Generation"
+		},
+		{
+			"path": "quizz-ui"
+		},
+		{
+			"path": "server"
+		}
+	],
+	"settings": {}
+}
